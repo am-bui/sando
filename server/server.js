@@ -1,10 +1,14 @@
-// const express = require('express');
-// const app = express();
+const express = require('express');
+const app = express();
 
 // app.use(express.json())
 
 // app.use('/', express.static('public'))
 
-// app.listen(3000, () => {
-//   console.log('Listening on port 3000...')
-// })
+app.get('/', (req, res) => {
+  res.send('Hello I am here')
+});
+
+app.listen(3000, () => {
+  console.log('Listening on port 3000...')
+})
