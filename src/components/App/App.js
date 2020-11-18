@@ -6,9 +6,9 @@ import SearchBar from '../SearchBar/SearchBar';
 
 const business = {
   imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-  name: 'MarginOtto Pizzeria',
-  address: '1010 Paddington Way',
-  city: 'Bordertown',
+  name: 'Napoletana Pizzeria',
+  address: '1010 This Way',
+  city: 'Thattown',
   state: 'NY',
   zipCode: '10101',
   category: 'Italian',
@@ -26,11 +26,17 @@ const businesses = [
 ]
 
 class App extends React.Component {
+  // these params rep the three pieces of info that'll be sent to the Yelp API
+  searchYelp(term, location, sortBy) {
+    // partial functionality to simulate a search
+    console.log(`You are searching ${sortBy} restaurants for ${term} in ${location}.`)
+  }
+
   render() {
     return (
       <div className="App">
         <h1>sando</h1>
-        <SearchBar />
+        <SearchBar searchYelp={this.searchYelp}/>
         <BusinessList businesses={ businesses }/>
       </div>
     );

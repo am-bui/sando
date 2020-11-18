@@ -28,14 +28,14 @@
   transition: color .25s;
 }
 
-.SearchBar-sort-options li:hover {
+/* .SearchBar-sort-options li:hover {
   color: #d4cfcf;
-}
+} */
 
 .SearchBar-sort-options li.active,
 .SearchBar-sort-options li.active:hover {
-  border-bottom: 1px solid #f0c36c;
-  color: #f0c36c;
+  border-bottom: 1px solid #2e2e2d;
+  color: #2e2e2d;
 }
 
 .SearchBar-fields {
