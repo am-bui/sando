@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "NODE_ENV=development webpack-dev-server  --open --hot & nodemon server/server.js"
   },
   "keywords": [],
   "author": "",
